@@ -1,0 +1,36 @@
+{
+    "name" : "balsa",
+    "description" : "A different starter theme",
+    "license" : "Apache v2",
+    "authors" : [
+        {
+            "name" : "Thomas Lartaud",
+            "email" : "contact@thomaslartaud.com",
+            "homepage" : "http://thomaslartaud.com/"
+        },
+        {
+            "name" : "Vincent Mimoun-Prat",
+            "email" : "contact@vincentprat.info",
+            "homepage" : "http://vincentprat.info/"
+        }
+    ],
+    "type" : "wordpress-theme",
+    "minimum-stability": "dev",
+    "require" : {
+        "php" : ">=5.4",
+        "composer/installers" : "~1.0",
+        "marvinlabs/baobab" : "~0.2.0",
+        "aristath/kirki": "dev-master#090c0cedc4c23e1328449f039cf974a44cc24fcd"
+    },
+    "require-dev" : {
+        "php" : ">=5.4"
+    },
+    "extra" : {
+        "installer-paths" : {
+            "vendor/composer/{$name}/" : ["type:wordpress-plugin"]
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor/composer"
+    }
+}

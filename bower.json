@@ -1,0 +1,26 @@
+{
+    "name" : "balsa",
+    "version" : "1.0",
+    "homepage" : "http://github.com/marvinlabs/balsa",
+    "authors" : [
+        {
+            "name" : "Thomas Lartaud",
+            "email" : "contact@thomaslartaud.com",
+            "homepage" : "http://thomaslartaud.com/"
+        },
+        {
+            "name" : "Vincent Mimoun-Prat",
+            "email" : "contact@vincentprat.info",
+            "homepage" : "http://vincentprat.info/"
+        }
+    ],
+    "license" : "",
+    "private" : true,
+    "ignore" : [
+        "**/.*",
+        "node_modules",
+        "assets/vendor"
+    ],
+    "dependencies" : {
+    }
+}

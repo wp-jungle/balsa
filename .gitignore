@@ -1,0 +1,43 @@
+# Translation files (MO are compiled)
+/languages/*.mo
+
+# Blade files (compiled)
+/app/storage/cache/blade/*
+!/app/storage/cache/blade/.gitkeep
+
+#################
+# DEPENDENCIES
+
+# Vendors
+/vendor/bower/*
+/vendor/composer/*
+!/vendor/bower/.gitkeep
+!/vendor/composer/.gitkeep
+
+# Composer
+/composer.lock
+
+# Node Package Manager
+/node_modules
+
+#####################
+# EDITORS & OTHERS
+
+# Sublime Text
+/*.sublime-project
+/*.sublime-workspace
+
+# NbProject
+/nbproject/private/
+/nbproject/project.properties
+/nbproject/project.xml
+
+# For now we'll ignore the whole project structure for PHPstorm :'(
+/.idea
+**/.idea
+
+# Crap
+**/.DS_Store
+/*.log
+/*.log.*
+**/*.log
