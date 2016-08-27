@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /**
      * This file can be used to declare plugin dependencies: if your theme requires or encourages the use of a
@@ -22,10 +22,10 @@ return array(
      * @link https://github.com/thomasgriffin/TGM-Plugin-Activation/blob/master/example.php#L43
      */
 
-    'plugins' => array(
+    'plugins' => [
 
         // This is an example of how to include a plugin pre-packaged with a theme.
-        array(
+        [
             'name'               => 'TGM Example Plugin', // The plugin name.
             'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
             'source'             => 'tgm-example-plugin.zip', // The plugin source.
@@ -36,24 +36,24 @@ return array(
             'force_deactivation' => false,
             // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
             'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-        ),
+        ],
 
         // This is an example of how to include a plugin from a private repo in your theme.
-        array(
+        [
             'name'         => 'TGM New Media Plugin', // The plugin name.
             'slug'         => 'tgm-new-media-plugin', // The plugin slug (typically the folder name).
             'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
             'required'     => true, // If false, the plugin is only 'recommended' instead of required.
             'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader',
             // If set, overrides default API URL and points to an external URL.
-        ),
+        ],
 
         // This is an example of how to include a plugin from the WordPress Plugin Repository.
-        array(
+        [
             'name'     => 'BuddyPress',
             'slug'     => 'buddypress',
             'required' => false,
-        ),
+        ],
 
         // Below is a set of recommended plugins for a production environment
 
@@ -61,27 +61,27 @@ return array(
          * Google Analytics
          */
         // Basic integration, quick and easy
-        array(
+        [
             'name'     => 'GA Google Analytics',
             'slug'     => 'ga-google-analytics',
-            'required' => false
-        ),
+            'required' => false,
+        ],
         // Feature-full, dashboard widgets, etc.
-        array(
+        [
             'name'     => 'GA Google Analytics',
             'slug'     => 'google-analytics-dashboard-for-wp',
-            'required' => false
-        ),
+            'required' => false,
+        ],
 
         // Below is a set of recommended plugins for a development environment
 
         // To debug rewrite rules
-        array(
+        [
             'name'     => 'Rewrite rules inspector',
             'slug'     => 'rewrite-rules-inspector',
-            'required' => false
-        ),
-    ),
+            'required' => false,
+        ],
+    ],
 
     /* --------------------------------------------------------------- */
     // Options of the TGM library
@@ -91,7 +91,7 @@ return array(
      * @link https://github.com/thomasgriffin/TGM-Plugin-Activation/blob/master/example.php#L82
      */
 
-    'options' => array(
+    'options' => [
 
         'default_path' => '',                      // Default absolute path to pre-packaged plugins.
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
@@ -101,6 +101,9 @@ return array(
         // If 'dismissable' is false, this message will be output at top of nag.
         'is_automatic' => false,                   // Automatically activate plugins after installation or not.
         'message'      => '',                      // Message to output right before the plugins table.
+        
+        // If you want to overwrite strings you could do it here too
+        /* 
         'strings'      => array(
             'page_title'                      => __('Install Required Plugins', 'tgmpa'),
             'menu_title'                      => __('Install Plugins', 'tgmpa'),
@@ -135,7 +138,7 @@ return array(
             'nag_type'                        => 'updated'
             // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
         )
+        */
+    ],
 
-    )
-
-);
+];
