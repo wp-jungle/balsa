@@ -19,8 +19,5 @@
         @php(next_post_link('<span class="next-entry">%link</span>'))
     </footer>
 
-    <?php
-        // TODO CHANGE THIS IN ORDER TO USE BLADE IF POSSIBLE
-        comments_template(Paths::theme('app/views/parts/comments/list.php'));
-    ?>
+    @php(comments_template('/app/views/parts/comments/list.php'))
 </article>

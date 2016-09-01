@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 page-content">
-                        @include('parts.header.page')
+                        @include('parts.header.default')
                         <div class="entry-content">
                             <div class="alert alert-warning">
                                 {!! __('Sorry, but the page you were trying to view does not exist.', BAOBAB_TEXTDOMAIN) !!}
