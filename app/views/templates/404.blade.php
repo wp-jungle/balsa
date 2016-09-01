@@ -1,7 +1,7 @@
 @extends('layout.default')
 
 @section('body.content')
-    <article class="{{{ join( ' ', get_post_class()) }}}">
+    <article class="{{ join( ' ', get_post_class()) }}">
         <div class="page-bg pad-top pad-bottom">
             <div class="container">
                 <div class="row">
@@ -9,16 +9,16 @@
                         @include('parts.header.page')
                         <div class="entry-content">
                             <div class="alert alert-warning">
-                                {{ __('Sorry, but the page you were trying to view does not exist.', 'giacometti') }}
+                                {!! __('Sorry, but the page you were trying to view does not exist.', BAOBAB_TEXTDOMAIN) !!}
                             </div>
 
-                            <p>{{ __('It looks like this was the result of either:', 'giacometti') }}</p>
+                            <p>{!! __('It looks like this was the result of either:', BAOBAB_TEXTDOMAIN) !!}</p>
                             <ul>
-                                <li>{{ __('a mistyped address', 'giacometti') }}</li>
-                                <li>{{ __('an out-of-date link', 'giacometti') }}</li>
+                                <li>{!! __('a mistyped address', BAOBAB_TEXTDOMAIN) !!}</li>
+                                <li>{!! __('an out-of-date link', BAOBAB_TEXTDOMAIN) !!}</li>
                             </ul>
 
-                            #{{ get_search_form() }}
+                            @php(get_search_form())
                         </div>
                     </div>
                 </div>

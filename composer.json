@@ -19,7 +19,7 @@
     "require" : {
         "php" : ">=5.4",
         "composer/installers" : "~1.0",
-        "marvinlabs/baobab" : "~0.2.0",
+        "marvinlabs/baobab" : "~0.3.0",
         "aristath/kirki": "dev-master#090c0cedc4c23e1328449f039cf974a44cc24fcd"
     },
     "require-dev" : {

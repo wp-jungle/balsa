@@ -2,10 +2,10 @@
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
     @include('parts.misc.head')
-    #{{ wp_head() }}
+    @php(wp_head())
 </head>
 
-<body #{{ body_class() }}>
+<body @php(body_class())>
 
 @section('body.header')
     @include('parts.header.default')
@@ -17,6 +17,6 @@
     @include('parts.footer.default')
 @show
 
-#{{ wp_footer() }}
+@php(wp_footer())
 </body>
 </html>
