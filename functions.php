@@ -1,5 +1,8 @@
 <?php
 
+// Because composer does not put its dependencies directly in vendor, we can define its root folder
+define('BAOBAB_COMPOSER_DIR', trailingslashit(dirname(__FILE__)) . 'vendor/composer');
+
 /**
  * Load the classes required by the theme using composer's auto-loading feature
  */
